@@ -676,182 +676,176 @@
   
   
   /* -----------fin--Recompensas------------------------------------------------------------------*/
-  .gif-section {
-    background-color: #000; 
-    position: relative;
-    overflow: hidden; /* Esto asegura que nada se desborde del contenedor */
-    height: 400px; /* Altura del rectángulo, ajusta según sea necesario */
-  }
-  
-  .content-wrapper {
-    background-image: url('https://media.giphy.com/media/26hiu3mZVquuykwhy/giphy.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    padding: 70px; /* Ajusta el padding según sea necesario */
-    width: calc(100% - 150px); /* Hace que el contenido sea más corto que el fondo */
-    margin: auto; /* Centra el contenido */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra el contenido exactamente en el medio del fondo */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea el texto y botón a la izquierda */
-    border-radius: 50px;
-  }
+/* -----------fin--Recompensas------------------------------------------------------------------*/
+.gif-section {
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
 
-  .gif-section_texto{
-    font-family: 'Pally-Bold';
-    font-size: 50px;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  .gif-section_texto_descripcion{
-    font-family: 'Pally-Regular';
-    font-size: 25px;
-    color: #fff;
-    margin-bottom: 20px;
-    height: 60%;
-    width: 70%;
-  }
+.gif-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%; /* Ajusta según el espacio que quieras a los lados */
+  right: 10%; /* Ajusta según el espacio que quieras a los lados */
+  bottom: 0;
+  background-image: url('https://media.giphy.com/media/26hiu3mZVquuykwhy/giphy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 0;
+  border-radius: 20px;
+}
 
-  .btn {
-    background-color: #de2276; /* Color del botón, ajusta según sea necesario */
-    color: #fff;
-    padding: 10px 20px; /* Ajusta el padding según sea necesario */
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    display: inline-block;
-    margin-top: 20px; /* Espacio sobre el botón */
-    cursor: pointer;
-    text-decoration: none; /* Elimina la subrayado de enlace */
-    font-weight: 500;
-    transition: background-color 0.3s; /* Efecto de transición para hover */
-  }
-  
-  .btn:hover {
-    background-color: #c81d65; /* Color del botón al pasar el cursor */
-  }
+.content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos hijos al centro */
+  width: 80%; /* O el ancho que desees para el contenido */
+  z-index: 1;
+  text-align: center; /* Asegura que el texto esté centrado */
+  border-radius: 50px;
+}
+
+.gif-section_texto{
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 45px;
+  font-family: 'Pally-Bold';
+}
+.gif-section_texto_descripcion 
+{
+  color: #fff;
+  font-family: 'Pally-Regular';
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  width: 55%;
+}
+
+
+.btn {
+  background-color: #de2276;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #c81d65;
+}
   
   /*-----------------------------------FOOTER---------------------------------------------------------------------------*/
- footer{
-  width: 100%;
-  height: auto;
-  padding-top: 100px;
-  padding-bottom: 35px;
-  background-color: black;
-  bottom: 0%;
-}
-#footer_central{
-  width: 60%;
-  height: auto;
-  margin: auto;
-}
-#footer_central #foo_cont1{
-  width: 100%;
-  height: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-#footer_central #foo_cont1 .foo_h2{
-  font-family: Montserrat-Light;
-  letter-spacing: 2px;
-  color: RGB(222,34,119);
-  font-size: 2rem;
-}
-#footer_central #foo_cont2{
-  display: flex;
-  width: 100%;
- 
+  .footer {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Pally', sans-serif; /* Asegúrate de que la fuente 'Pally' esté importada correctamente */
+    padding: 40px 0;
+    padding-top: 130px;
 }
 
-#footer_central #foo_cont2 #foo_info{
-  display: flex;
-  width: 50%;
-  border-right: 1px solid RGB(222,34,119);
-  border-left: 1px solid RGB(222,34,119);
-  padding-right: 10px;
-}
-#footer_central #foo_cont2 #foo_info .foo_info_a{
-  width: 35%;
-  height: 75px;
-  text-align: center;
-  line-height: 75px;
-  margin-left: 10px;
-  transition: all 1000ms;
-}
-#footer_central #foo_cont2 #foo_info .foo_info_a:hover{
-  background-color: RGB(222,34,119) ;
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* O el ancho máximo que prefieras */
+    margin: 0 auto;
+    padding: 0 20px; /* Padding para dispositivos más pequeños */
 }
 
-#footer_central #foo_cont2 #foo_info .foo_info_a a{
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-family: Montserrat-Light;
-  font-size: 10px;
-  letter-spacing: 2px;
-}
-#footer_central #foo_cont2 #foo_info .foo_info{
- 
-  width: 20%;
-  height: 75px;
-  text-align: center;
-  line-height: 75px;
-  margin-left: 10px;
-  transition: all 1000ms;
-}
-#footer_central #foo_cont2 #foo_info .foo_info:hover{
-
-  background-color: RGB(222,34,119) ;
-}
-#footer_central #foo_cont2 #foo_info .foo_info a{
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-family: Montserrat-Light;
-  font-size: 10px;
-  letter-spacing: 2px;
+.footer-section {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
 }
 
-
-#footer_central #foo_cont2 #foo_img{
- width: 50%;
- border-right: 1px solid RGB(222,34,119);
-}
-#footer_central #foo_cont2 #foo_img #foo_img_central{
- width: 75px;
- height: 75px;
- margin: auto;
- border-radius: 8px;
- transition: all 1000ms; 
-}
-#footer_central #foo_cont2 #foo_img #foo_img_central:hover{
- background-color: RGB(222,34,119); 
-}
-#footer_central #foo_cont2 #foo_img #foo_img_central a img{
- width: 100%;
- height: 100%;
- 
-}
-#footer_central #foo_cont3{
-  width: 100%;
-  height: 50px;
-  padding-top: 2px;
-}
-#footer_central #foo_cont3 p{
-  text-align: center;
+.footer-logo img {
+    max-width: 100px; /* Ajusta el tamaño de tu logo */
+    margin-bottom: 20px;
 }
 
-#footer_central #foo_cont3 #derechos{
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 18px; /* Tamaño de los títulos de las columnas */
+    font-family: 'Pally-Bold';
+}
 
-  font-family: Montserrat-Light;
-  text-decoration: none;
-  color: RGB(222,34,119);
-  padding-top: 10px;
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Pally-Regular';
+    font-size: 16px; /* Tamaño de los enlaces */
+    font-weight: normal;
+}
+
+.footer-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-app-link img {
+    max-width: 150px; /* Ajusta el tamaño de los logos de las apps */
+    margin-bottom: 10px;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.footer-social-media a {
+    color: #fff;
+    font-size: 24px; /* Tamaño de los iconos de redes sociales */
+    margin: 0 10px;
+}
+
+.footer-bottom-text p {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-family: "Pally-Bold";
+    font-size: 20px; /* Tamaño del texto de abajo */
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-apps {
+        align-items: center;
+    }
 }
 
 /*-----------------------------------FOOTER---------------------------------------------------------------------------*/
