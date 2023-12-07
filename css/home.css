@@ -36,9 +36,13 @@
   }
   
   /* ---------------inicio background bolitas------------------------ */
-  .home_area_circulos{
-    background: #000;  
-  }
+  .home_area_circulos {
+    overflow: hidden; /* Asegúrate de que los elementos que se salen del área visible no creen scroll horizontal */
+    position: relative; /* Si aún no está establecido */
+    width: 100%; /* Ajusta al ancho del área de visualización */
+    height: 100%; /* Ajusta al alto deseado */
+}
+
   .home_circulos{
     position: absolute;
     top: 0;
@@ -46,7 +50,6 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: 100px;
   }
   .home_circulos li{
     position: absolute;
@@ -172,6 +175,10 @@
   align-self: center;
   justify-content: center;
   }
+
+  .home_centered-content, .content-wrapper {
+    text-align: center;
+}
   
     
   .home_h1{
@@ -185,7 +192,7 @@
   .home_p_principal{
   font-family: 'Pally-Regular';
   color: #ffffff;
-  padding-top: 15px;
+  padding-top: 20px;
   text-align: center;
   font-size: 1.5rem;
   }
@@ -311,7 +318,7 @@
   }
   #b1-5 {
     top:820px;
-    left:1190px;
+    left:950px;
   }
   #b1-6 {
     top:10px;
@@ -850,3 +857,108 @@
 
 /*-----------------------------------FOOTER---------------------------------------------------------------------------*/
   
+@media (max-width: 768px) {
+  /* Ajustes para el título principal */
+  .home_h1 {
+      font-size: 4rem; /* Reduce el tamaño de la fuente */
+      padding-left: 10px;
+    padding-right: 10px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+  }
+
+  /* Ajustes para los párrafos */
+  .home_p_principal {
+    padding-left: 20px;
+    padding-right: 20px;
+      font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+  }
+
+  /* Ajustes para botones */
+  .home_btn {
+      width: 50%; /* Aumenta el ancho para una mejor accesibilidad */
+      font-size: 14px; /* Reduce el tamaño de la fuente */
+  }
+
+  .home_centered-content, .content-wrapper {
+    text-align: center;
+}
+  
+
+  /* Ajustes para el carrusel */
+  .home_carousel-item__image, .home_carousel-item__info {
+      width: 30%; /* Asegura que las imágenes y la información ocupen todo el ancho */
+      height: 50%;
+  }
+
+  .home_carousel-item__title, .home_carousel-item__description {
+      text-align: center; /* Centra el texto del carrusel */
+      font-size: 24px; /* Ajusta el tamaño de la fuente para el título */
+  }
+
+  /* Ajustes para las secciones de texto */
+  .home_texto_wrapper, .home_texto_izquierda, .home_texto_derecha {
+      flex-direction: column; /* Cambia la disposición de fila a columna */
+      text-align: center; /* Centra el texto */
+      width: 100%; /* Ajusta el ancho al 100% */
+  }
+
+  .home_texto_derecha_h2 {
+      width: auto; /* Ajusta el ancho a auto para adaptarse al contenido */
+  }
+
+  /* Ajustes para la sección con GIF */
+  .content-wrapper {
+      width: 90%; /* Ajusta el ancho del contenedor de contenido */
+  }
+
+  .gif-section_texto, .gif-section_texto_descripcion {
+      font-size: 20px; /* Reduce el tamaño de la fuente */
+  }
+
+  /* Ajustes para el footer */
+  .footer-content, .footer-section {
+      flex-direction: column; /* Cambia la disposición de fila a columna */
+  }
+
+  .footer-logo img {
+      max-width: 80px; /* Reduce el tamaño del logo */
+  }
+
+  .footer-column ul li a {
+      font-size: 14px; /* Reduce el tamaño de la fuente de los enlaces */
+  }
+
+  .footer-app-link img {
+      max-width: 120px; /* Reduce el tamaño de los logos de las apps */
+  }
+
+  .footer-social-media a {
+      font-size: 20px; /* Reduce el tamaño de los iconos de redes sociales */
+  }
+
+  @media (max-width: 768px) {
+    /* Ajustes para #b1-5 */
+    #b1-5 {
+      left: 50%; /* Centra la burbuja */
+      transform: translateX(-50%); /* Desplaza la burbuja a la izquierda en un 50% de su ancho para centrarla */
+      top: 820px; /* Ajusta la posición superior si es necesario */
+    }
+    
+    /* Ajustes para #b2-5 */
+    #b2-5 {
+      left: 50%; /* Centra la burbuja */
+      transform: translateX(-50%); /* Desplaza la burbuja a la izquierda en un 50% de su ancho para centrarla */
+      top: 1600px; /* Ajusta la posición superior si es necesario */
+    }
+    
+    /* Ajustes para #b1-6 */
+    #b1-6 {
+      left: 50%; /* Centra la burbuja */
+      transform: translateX(-50%); /* Desplaza la burbuja a la izquierda en un 50% de su ancho para centrarla */
+      top: 10px; /* Ajusta la posición superior si es necesario */
+      display: none;
+    }
+  }
+}
