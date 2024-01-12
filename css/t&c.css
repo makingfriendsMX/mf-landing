@@ -1,0 +1,43 @@
+/* fonts----------------------------------------------------------- */
+@import url('pally.css');
+/* portada----------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.ticos_content {
+    transform: translateZ(0);
+    background-color: black;
+  
+  }
+  
+
+  .ticos_h1{
+    text-align: center;
+    font-size: 5rem;
+    color: #ffffff;
+    font-family: 'Pally-Bold';
+    padding-top: 70px;
+    }
+  
+    .ticos_h2{
+        text-align: center;
+        font-size: 2.5rem;
+        color: #ffffff;
+        font-family: 'Pally-Regular';
+        padding-top: 70px;
+        }
+      
+.ticos_p{
+    text-align: justify;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: 'Pally-Regular';
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
