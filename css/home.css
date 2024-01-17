@@ -734,19 +734,19 @@
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: normal;
-  width: 55%;
+  width: 60%;
 }
 
 
 .btn {
   background-color: #de2276;
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   text-align: center;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 50px;
   cursor: pointer;
   text-decoration: none;
   font-weight: 500;
