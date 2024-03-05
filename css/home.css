@@ -1108,13 +1108,6 @@
 }
 
 @media (max-width: 768px) {
-  .friends-section {
-    background-color: #000;
-    position: relative;
-    overflow: hidden;
-    height: 700px; /* Ajusta la altura según sea necesario */
-  }
-  
   .friends-section_texto {
     color: #fff;
     margin-bottom: 10px;
