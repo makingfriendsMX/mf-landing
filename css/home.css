@@ -683,6 +683,41 @@
   
   
   /* -----------fin--Recompensas------------------------------------------------------------------*/
+  .friends-section {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    height: 700px; /* Ajusta la altura según sea necesario */
+  }
+  
+  .friends-section_texto {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-family: 'Pally-Bold';
+    text-align: center;
+  }
+  
+  .friends-section-img {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    padding-top: 100px;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias líneas si es necesario */
+  }
+  
+  .friends-section-img img {
+    max-width: 60%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 100px; /* Ajusta esto para cambiar el tamaño de las imágenes */
+    margin: 0 40px; /* Añade un poco de espacio entre las imágenes */
+  }
+
+  .highlight {
+    color: #de2276; 
+    font-size: 55px;
+  }
+  
 /* -----------fin--Recompensas------------------------------------------------------------------*/
 .gif-section {
   background-color: #000;
@@ -1070,4 +1105,42 @@
       display: none;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .friends-section {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    height: 700px; /* Ajusta la altura según sea necesario */
+  }
+  
+  .friends-section_texto {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Pally-Bold';
+    text-align: center;
+  }
+  
+  .friends-section-img {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    padding-top: 100px;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias líneas si es necesario */
+  }
+  
+  .friends-section-img img {
+    max-width: 50%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 100px; /* Ajusta esto para cambiar el tamaño de las imágenes */
+    margin: 30px 20px; /* Añade un poco de espacio entre las imágenes */
+  }
+
+  .highlight {
+    color: #de2276; 
+    font-size: 50px;
+  }
+
 }
