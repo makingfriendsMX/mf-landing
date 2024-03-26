@@ -1108,9 +1108,13 @@
 }
 
 @media (max-width: 768px) {
+
+  .friends-section {
+    height: 800px; /* Ajusta la altura según sea necesario */
+  }  
+
   .friends-section_texto {
     color: #fff;
-    margin-bottom: 10px;
     font-size: 50px;
     font-family: 'Pally-Bold';
     text-align: center;
@@ -1120,7 +1124,7 @@
     display: flex;
     align-items: center; /* Centrado vertical */
     justify-content: center; /* Centrado horizontal */
-    padding-top: 100px;
+    padding-top: 30px;
     flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias líneas si es necesario */
   }
   
