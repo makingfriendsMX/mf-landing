@@ -194,6 +194,20 @@
   font-family: 'Pally-Bold';
   margin-top: 2rem;
   }
+
+  .home_h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Pally-Bold';
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    }
+
+    .home-app-link img {
+      max-width: 150px; /* Ajusta el tamaño de los logos de las apps */
+      margin: 1rem;
+  }
       
   .home_p_principal{
   font-family: 'Pally-Regular';
@@ -857,6 +871,7 @@
 
 .footer-app-link img {
     max-width: 150px; /* Ajusta el tamaño de los logos de las apps */
+    min-width: 150px;
     margin-bottom: 10px;
 }
 
@@ -907,6 +922,20 @@
       justify-content: center;
       text-align: center;
       align-items: center;
+  }
+
+  .home_h2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-family: 'Pally-Bold';
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    }
+
+    .home-app-link img {
+      max-width: 120px; /* Ajusta el tamaño de los logos de las apps */
+      margin: .5rem;
   }
 
   /* Ajustes para los párrafos */
